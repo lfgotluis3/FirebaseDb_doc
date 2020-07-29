@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_Db</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/db.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form class="my-5" name="informacion" id="informacion">
+                    <div class="id-wrapper" id="id">
+                        <h4></h4>
+                    </div>
+                    <input type="text" id="clave" class="form-control mb-3" placeholder="id">
+                    <input type="text" id="nombre" class="form-control mb-3" placeholder="nombre">
+                    <input type="text" id="email" class="form-control mb-3" placeholder="email">
+                    <input type="text" id="url" class="form-control mb-3" placeholder="url">
+                    <!--div id="add-product" class="btn btn-success">Guardar datos</div-->
+                    <div class="button-wrapper">
+                        <button type="submit" id="add-product" class="btn btn-success">Guardar datos</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <form class="my-5" name="change" id="change">
+                    <div class="id-wrapper" id="chan">
+                        <h4></h4>
+                    </div>
+                    <input type="text" id="nom" class="form-control mb-3" placeholder="nombre">
+                    <input type="text" id="em" class="form-control mb-3" placeholder="email">
+                    <input type="text" id="ur" class="form-control mb-3" placeholder="url">
+                    <!--div id="add-product" class="btn btn-success">Guardar datos</div-->
+                    <div class="button-wrapper">
+                        <button type="submit" id="edit" class="btn btn-warning">Editar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-info" id="mostrar">mostrar</button>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Url</ht>
+                            <th scope="col">Borrar</ht>
+                            <th scope="col">Editar</ht>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                        <!--tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB3fD2FkZED_VN-_cA1XzTOM6pntRe0RTU",
+            authDomain: "dbtest-b4844.firebaseapp.com",
+            databaseURL: "https://dbtest-b4844.firebaseio.com",
+            projectId: "dbtest-b4844",
+            storageBucket: "dbtest-b4844.appspot.com",
+            messagingSenderId: "616250492427",
+            appId: "1:616250492427:web:37b50934444ca345dbe90e"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/db.js"></script>
+</body>
+</html>

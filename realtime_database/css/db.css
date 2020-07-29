@@ -1,0 +1,48 @@
+.form-group
+    {
+        width: 100%;
+       margin-bottom: 20px; 
+    }
+.form-group label
+    {
+        font-weight: bold;
+    }
+.form-group input
+    {
+        width: 100%;
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+.form-group .input-group input
+    {
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+.form-group textarea
+    {
+        width: 100%;
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+.button-wrapper
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+.button-wrapper button
+    {
+        box-shadow: 3px 3px 3px;
+        margin: 5px;
+    }
+.button-wrapper button:hover  
+    {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+.table
+    {
+        display: none;
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
